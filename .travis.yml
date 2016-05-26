@@ -16,7 +16,7 @@ matrix:
     - php: 7.0
   allow_failures:
     - php: nightly
-  fast_finish: true
+  fast_finish: false
 
 before_script:
   - phpize && ./configure && make
