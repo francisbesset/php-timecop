@@ -1065,7 +1065,7 @@ PHP_FUNCTION(timecop_date_create)
 	object_init_ex(return_value, TIMECOP_G(ce_DateTime));
 
 	/* call TimecopDateTime::__construct() */
-	timecop_call_constructor(return_value, TIMECOP_G(ce_TimecopDateTime), params, ZEND_NUM_ARGS());
+	timecop_call_constructor(return_value, TIMECOP_G(ce_DateTime), params, ZEND_NUM_ARGS());
 
 	efree(params);
 }
